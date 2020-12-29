@@ -13,16 +13,16 @@ return (
         <Collapse isOpen={isOpen} navbar >
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#here">Portfolio</NavLink>
+              <NavLink href="#portfolio-seccion">Portfolio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#here">Skill set</NavLink>
+              <NavLink href="#skillset-seccion">Skill set</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Experience</NavLink>
+              <NavLink href="#experience-seccion">Experience</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Contact</NavLink>
+              <NavLink href="#contact-seccion">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
