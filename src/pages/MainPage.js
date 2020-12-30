@@ -20,12 +20,12 @@ const MainPage = (props) =>{
             <Navbar/>
             <br/> 
             <Portfolio/>
-            {/* <br/> 
+            <br/> 
             <SkillSet/>
             <br/> 
             <Experience/>
             <br/> 
-            <Contact/> */}
+            <Contact/>
         </Fragment>
     )
 }
