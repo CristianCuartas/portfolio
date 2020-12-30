@@ -1,6 +1,5 @@
-import React, { useState }from 'react';
+import React, { Fragment, useState }from 'react';
 import { Jumbotron, Button, Popover, PopoverHeader, PopoverBody} from 'reactstrap';
-
 import IconJavaScript from './../../assets/img/icons/JS.png'
 import IconHTML from './../../assets/img/icons/HTML.png'
 import IconReact from './../../assets/img/icons/React.png'
@@ -136,8 +135,7 @@ const skills = [
     title:"Nginx",
     img: IconNginx,
     description: 'Cuento con 1 año de experiencia trabajando en despliegues con Nginx, mi nivel de habilidad es novato.'
-  },
-
+  }
 ];
 
 return(
@@ -149,8 +147,11 @@ return(
     <div className="col-md-12">
       <Jumbotron>
     {skills.map((popover, i) => {
-        return <PopoverItem key={i} item={popover} id={i} />;
-        <br/>
+        return (
+          <Fragment>
+            <PopoverItem key={i} item={popover} id={i} />
+          </Fragment>
+        )
       })}
       </Jumbotron>
     </div>
